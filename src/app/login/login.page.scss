@@ -1,0 +1,40 @@
+ion-header{
+  background-color: var(--ion-color-primary);
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ion-img {
+    width: 70%;
+    margin-top: -40px;
+  }
+}
+
+ion-tabs{
+  position: relative;
+  ion-tab-bar{
+    height: 45px;
+    ion-tab-button{
+      background-color: var(--ion-color-secondary);
+      max-width: 100%;
+      color: var(--ion-color-primary);
+      border-bottom: 1px solid var(--ion-color-primary);
+      &:nth-child(1){
+        border-right: 1px solid var(--ion-color-primary);
+      }
+      ion-label{
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+    .tab-activated{
+      background-color: var(--ion-color-tertiary);
+      transition: background-color .5s;
+    }
+    .tab-desactive{
+      background-color: var(--ion-color-secondary);
+      transition: background-color .5s;
+    }
+    
+  }
+}
