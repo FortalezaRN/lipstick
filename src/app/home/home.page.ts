@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,7 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-	constructor(private menu: MenuController) { }
+	constructor(private menu: MenuController, private modalCtrl: ModalController) { }
 	openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
@@ -15,5 +17,12 @@ export class HomePage {
 
   openEnd() {
     this.menu.open('end');
+  }
+
+  async showModal() {
+    const modal = await this.modalCtrl.create({
+      component: ModalComponent
+    })
+    await modal.present()
   }
 }
