@@ -1,6 +1,8 @@
 {
   "name": "applipstick",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "ca76d987"
 }

@@ -1,21 +1,30 @@
-<ion-menu side="start" menu-id="first">
+<ion-header>
+  <ion-button (click)="openFirst()">
+    <ion-icon slot="icon-only" name="menu"></ion-icon>
+  </ion-button>
+  <ion-img src="../../assets/img/logoMenu.png"></ion-img>
+</ion-header>
+
+<ion-menu side="start" menu-id="first" swipe-gesture="false">
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Start Menu</ion-title>
+      <ion-title><ion-img src="../../assets/img/logoMenu.png"></ion-img></ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
+      <ion-item><ion-icon slot="start" name="contacts"></ion-icon>Amigos</ion-item>
+      <ion-item><ion-icon slot="start" name="stats"></ion-icon>Estatística</ion-item>
+      <ion-item><ion-icon slot="start" name="list-box"></ion-icon>Diário
+        Coletivo</ion-item>
+      <ion-item><ion-icon slot="start" name="chatboxes"></ion-icon>Fale Conosco</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
 
+<ion-router-outlet main></ion-router-outlet>
+
 <ion-content>
-	<div> MAPA </div>
+  <div> MAPA </div>
   <ion-button expand="full" color="primary">AJUDA!</ion-button>
 </ion-content>
