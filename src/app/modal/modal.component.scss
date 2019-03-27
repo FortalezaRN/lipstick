@@ -1,0 +1,17 @@
+ion-content {
+  div{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    ion-button{
+      width: 40%;
+      height: 210px;
+      margin: 10px 20px;
+      ion-img {
+        width: 110px;
+      }
+    }
+  }
+}
