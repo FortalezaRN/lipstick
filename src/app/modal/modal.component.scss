@@ -1,5 +1,6 @@
 ion-content {
     --background: var(--ion-color-primary);
+    
   div{
     width: auto;
     display: flex;
@@ -7,12 +8,19 @@ ion-content {
     justify-content: center;
     flex-wrap: wrap;
     ion-button{
+      outline: auto;
+      outline-style: solid;
       width: 40%;
       height: 210px;
       margin: 10px 20px;
+      color: white;
       ion-img {
         width: 110px;
       }
     }
+  }
+  h1 {
+    text-align: center;
+    color: white;
   }
 }

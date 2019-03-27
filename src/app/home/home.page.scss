@@ -16,7 +16,7 @@ ion-header {
   }
   ion-img {    
     height: 80%;
-    max-width: 152px;    
+    max-width: 152px; 
   }
   ion-toolbar{
     display: flex;
@@ -31,14 +31,7 @@ ion-header {
       }
     }
   }
-
-
 }
-
-
-
-  
-
 
 ion-content {
   div {
@@ -56,6 +49,11 @@ ion-content {
       }
     }
   }
+
+  ion-img {
+    margin-top: 50px;
+  }
+
   #botao-ajuda {
     bottom: 0px;
     position: fixed;
