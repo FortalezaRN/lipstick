@@ -8,7 +8,7 @@
       <ion-input placeholder="Senha" type="password"></ion-input>
       <ion-icon name="lock"></ion-icon>
     </div>
-    <ion-button (click)="login()" expand="block">Entrar</ion-button>
+    <ion-button expand="block" [routerLink]="['/home']">Entrar</ion-button>
     <button class="forgot">Esqueceu a senha?</button>
   </div>
 </ion-content>
