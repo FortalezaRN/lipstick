@@ -1,3 +1,11 @@
+ion-header {
+    --background: var(--ion-color-primary);
+}
+
+ion-title {
+    text-align: center;
+}
+
 #botao-ajuda {
     bottom: 0px;
     position: fixed;
@@ -5,3 +13,7 @@
     height: 18%;
     font-size: 2.8em;
 }
+
+
+
+
