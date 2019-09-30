@@ -1,5 +1,6 @@
 ion-header {
-  height: 12%;
+
+    height: 12%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,11 +16,13 @@ ion-header {
   }
   ion-img {    
     height: 80%;
-    max-width: 152px;    
+    max-width: 152px; 
   }
   ion-toolbar{
     display: flex;
     justify-content: center;
+    --background: var(--ion-color-primary);
+    color: white;
     ion-title{
       ion-img {
         display: flex;
@@ -46,5 +49,21 @@ ion-content {
       }
     }
   }
+
+  ion-img {
+    margin-top: 50px;
+  }
+
+  #botao-ajuda {
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    font-size: 2.8em;
+}
   
 }
+
+
+
+
